@@ -13,11 +13,11 @@
   - 최적화된 synthesized image 나타내기(display 전에 deprocessing 필요)
   
 - Video NST
-  - 원본 비디오를 개별 프레임으로 나누기
-  - 개별 프레임에 Image NST 적용하기
+  - 원본 비디오를 개별 프레임으로 나누기(data 폴더에 저장)
+  - 개별 프레임에 Image NST 적용하기(output 폴더에 저장)
   - 개별 프레임을 비디오로 합치기
 
 # 3. 주요사항
-  - 비디오의 개별 프레임은 data 폴더에 저장되고, 개별 프레임에 NST를 적용하여 output 폴더에 저장한다.
+  - NST 방법으로는 Pre-trained CNN을 사용하는 방식 외에도, style domain에 대해 모델을 학습시켜서 Feedforward 모델 얻을 수 있다.
   - colab에서 짧은 길이의 영상을 처리하는데에도 시간이 상당히 소요된다. (5s * 30fps = 약 150장 처리에 30분 소요)
   
